@@ -1,6 +1,6 @@
 package edu.guilford;
 
-import java.util.Random;
+import java.util.Random; // stuff
 
 public class Deck {
     Card[] deck = new Card[52];
