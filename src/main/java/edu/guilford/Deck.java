@@ -5,6 +5,8 @@ import java.util.Random; // stuff
 public class Deck {
     Card[] deck = new Card[52];
 
+    int topCard;
+
     Random rand = new Random();
 
     public Deck() {
@@ -27,9 +29,18 @@ public class Deck {
                 deck[13 * i + j] = new Card(faces[j], suits[i], tempval);
             }
         }
+
+        this.topCard = 0;
     }
 
     public Card draw(int position) {
+        return this.deck[position];
+    }
+
+    public Card draw() {
+        int position = this.topCard;
+        this.topCard++;
+        this.topCard = this.topCard % 52;
         return this.deck[position];
     }
 
@@ -44,4 +55,5 @@ public class Deck {
             swap(i, rand.nextInt(52));
         }
     }
+
 }
