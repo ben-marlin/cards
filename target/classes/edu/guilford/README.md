@@ -10,7 +10,7 @@ Previously, we built a dice roller, which could be adapted to any number of dice
 
 To do this, you'll need to understand what's going on with creating a class (and all the necessary methods), instantiating a class, using objects. To that end, it would be a huge advantage to have read Chapter 11 before starting on this project.
 
-##Sample Code
+## Sample Code
 
 You have been given sample code that should print the Unicode characters for hearts, spades, diamonds, and clubs. Run it! If you don't get the appropriate symbols, we have to do something with your machine!
 
