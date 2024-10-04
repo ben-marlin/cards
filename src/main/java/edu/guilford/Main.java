@@ -2,21 +2,12 @@ package edu.guilford;
 
 public class Main {
     public static void main(String[] args) {
-        Deck myDeck = new Deck();
-
-        System.out.println("Here's the unshuffled deck:");
-
-        for (int i = 0; i < 52; i++) {
-            System.out.print("Card " + i + " " + myDeck.draw() + "\t");
-        }
-
-        System.out.println("\nShuffle deck!");
-        myDeck.shuffle();
-
-        System.out.println("Here's the shuffled deck:");
-
-        for (int i = 0; i < 52; i++) {
-            System.out.print("Card " + i + " " + myDeck.draw() + "\t");
-        }
+        System.out.println("Some special unicode characters:");
+        System.out.println("spades unicode \u2660  \t just pasting ♠");
+        System.out.println("hearts unicode \u2665  \t just pasting ♥︎");
+        System.out.println("diamonds unicode \u2666  \t just pasting ◆");
+        System.out.println("clubs unicode \u2663 \t just pasting ♣");
+        System.out.println("check mark unicode \u2713 \t just pasting ✓");
+        System.out.println("rectangle unicode \u25A2 \t just pasting ▢");
     }
 }

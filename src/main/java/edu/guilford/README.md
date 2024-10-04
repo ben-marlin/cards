@@ -23,7 +23,11 @@ The project will give us practice with the following.
 
 You have been given sample code that should print the Unicode characters for hearts, spades, diamonds, and clubs. Run it! If you don't get the appropriate symbols, we have to do something with your machine!
 
-If all else fails, we'll just use H for hearts, S for spades, D for diamonds, and C for clubs. But the actual symbols would look cool!
+I found a thread on stackoverflow.com - one of the most useful sites on the internet - that said this problem could be fixed by entering the terminal (that's the pane at the bottom where you interact with input when a program is running) and typing `chcp 65001`. I have confirmed that this worked on the Windows 11 machine at the front of the classroom.
+
+If all else fails, we could just use H for hearts, S for spades, D for diamonds, and C for clubs. But the actual symbols would look cool!
+
+(If you're interested in using more Unicode characters, the format is `\uXXXX` where the XXXX can be found in https://en.wikipedia.org/wiki/List_of_Unicode_characters.)
 
 ## Building a Card
 
@@ -99,6 +103,8 @@ Make a class file for the `Deck` class. Let VSCode do the heavy lifting. But add
 ## Fields
 
 Add a line that declares the array. Something like `private Card[] deck = new Card[52];`.
+
+We'll need a randomizer, so do the usual import and add one. I thnk I called mine `rand`.
 
 For reasons that will become clear later, also add `private int topCard`.
 
