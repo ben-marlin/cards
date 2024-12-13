@@ -1,0 +1,1 @@
+Project for students to learn to construct classes, constructors, getters & setters. Builds a Card class and then a Deck class that contains an array of Cards. Students write a `shuffle()` method, a `deal()` method.
